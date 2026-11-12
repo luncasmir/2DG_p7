@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Castro_Luna_p7</title>
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        :root{
+            --lime-color:#CCFF02;
+            --storm-color:#8695A8;
+            --violet-color:#E4D2FC;
+            --chilli-color:#EF432B;
+            --dark-color:#282725;
+            --light-color:#EFEAE7;
+            --forest-color:#325444;
+        
+        }
+
+        html{
+            font-size: 16px;
+        }
+
+        .container{
+            display: grid;
+            height: 100vh;
+            width: 100vw;
+            grid-template-columns: 1fr 1fr 1fr  ;
+            grid-template-rows: 1fr 1fr 1fr 1fr ;
+        }
+
+        .color{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 0.25em;
+            padding: 0.25em;
+            overflow: hidden;
+        }
+
+        .codigo{
+            font-family: 'Roboto Mono', monospace;
+            font-size: 0.8em;
+        }
+        
+
+        .nombre{
+            font-family: 'Michroma', sans-serif;
+            font-size: 5.5em;
+            font-weight: 400;
+            line-height: 1.1;
+        }
+
+        #lima{
+            background-color: var(--lime-color);
+            grid-column: 1;
+            grid-row: 1;
+            color: var(--forest-color);
+        }
+
+        #storm{
+            background-color: var(--storm-color);
+            grid-column: 1;
+            grid-row: 2;
+            color: var(--light-color);
+        }
+
+        #violet{
+            background-color: var(--violet-color);
+            grid-column: 1;
+            grid-row: 3;
+            color: var(--chilli-color);
+        }
+
+        #chilli{
+            background-color: var(--chilli-color);
+            grid-column: 1;
+            grid-row: 4;
+            color: var(--light-color);
+        }
+
+        #dark{
+            background-color: var(--dark-color);
+            grid-column: 2;
+            grid-row: 1/3;
+            color: var(--light-color);
+        }
+
+        #light{
+            background-color: var(--light-color);
+            grid-column: 2;
+            grid-row: 3/5;
+            color: var(--dark-color);
+            justify-content: flex-end;
+        }
+
+        #forest{
+            background-color: var(--forest-color);
+            grid-column: 3;
+            grid-row: 1/5;
+            color: var(--light-color);
+        }
+
+        #light{
+            justify-content: flex-end;
+        }
+
+        #dark{
+            justify-content: flex-start;
+        }
+
+             
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container"> 
+        <div id="lima">
+            <p class="codigo">#CCFF02</p>
+            <p class="nombre">LIME</p>
+        </div>
+        <div id="storm">
+            <p class="codigo">#8696A8</p>
+            <p class="nombre">STORM</p>
+        </div>
+        <div id="violet">
+            <p class="codigo">#E4D2FC</p>
+            <p class="nombre">VIOLET</p>
+        </div>
+        <div id="chilli">
+            <p class="codigo">#EF432B</p>
+            <p class="nombre">CHILLI</p>
+        </div>
+        <div id="dark">
+            <p class="codigo">#282625</p>
+            <p class="nombre">DARK</p>
+        </div>
+        <div id="light">
+            <p class="codigo">#EFEAE8</p>
+            <p class="nombre">LIGHT &amp; BRIGHT</p>
+        </div>
+        <div id="forest">
+            <p class="codigo">#325444</p>
+            <p class="nombre">FOREST</p>
+        </div>
+    </div>
+</body>
+</html>
